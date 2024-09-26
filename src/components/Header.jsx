@@ -1,6 +1,6 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import { useCart } from "../Context/Cartcontext";
+import { useCart } from "../Context/CartContext";
 
 function Header(){
 

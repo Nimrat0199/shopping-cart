@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { useCart } from "../Context/Cartcontext";
+import { useCart } from "../Context/CartContext";
 
 
 

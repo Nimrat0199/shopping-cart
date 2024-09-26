@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useCart } from "../Context/Cartcontext";
+import { useCart } from "../Context/CartContext";
 
 function Card1({link}){
     const [click , setClick] = useState(false)
