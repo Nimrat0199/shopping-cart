@@ -17,7 +17,7 @@ function Home(){
 
     return(
         <>
-        <div className="flex gap-x-4 w-[85%] gap-y-10 mx-auto min-h-[600px] flex-wrap mt-16 justify-center">
+        <div className="flex gap-x-4 w-full gap-y-10  min-h-[600px] flex-wrap mt-16 justify-center">
         {prod.map((item)=><Card1 key={item.id} link={item}/>)}
         </div>
         </>

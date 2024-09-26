@@ -18,18 +18,30 @@ function Card2({link}){
     }
 
     return(
-        <div ref={delref} className="p-2  md:w-[40%] md:flex md:mb-0 mx-auto mb-5 md:mx-0 justify-between    md:justify-around items-center text-white  ">
-            <div className="w-full">
-            <img src={link.image} className="lg:h-60 lg:w-52 lg:mx-0 h-40 mx-[20%]  w-40 mr-2"></img>
-            </div>
-            <div className="text-center">
-                <h1 className="lg:text-xl text-lg lg:w-60 font-medium lg:font-bold">{link.title}</h1>
-                <h1 className="lg:font-bold lg:text-lg text-sm inline-block mr-3 lg:mt-5 lg:mb-3">QTY : </h1>
-                <input id="qty" defaultValue={link.qty} onChange={chngqty} type="number" className="lg:w-10 w-5 text-black lg:text-lg text-sm lg:font-bold"></input>
-                <h1 className="lg:text-3xl text-lg font-bold lg:mb-3">${price}</h1>  
-                <button className="bg-red-500 lg:text-lg text-sm px-3" onClick={del}>Remove from cart</button>
-            </div>
+        <div ref={delref} className="p-2 md:w-[45%] md:flex lg:mb-0 mb-5 justify-between lg:justify-around items-center border-2 border-gray-700 text-white">
+        <div className="">
+            <img src={link.image} className="h-40 w-40 lg:h-60 lg:w-52 mx-auto  lg:mx-0" />
         </div>
+        <div className="text-center lg:text-left md:w-[45%]  ">
+            <span className="text-xl">{link.title}</span>
+            <div className="flex items-center justify-center lg:justify-start lg:mt-5 lg:mb-3">
+                <h1 className="text-sm lg:text-lg  mr-3">QTY :</h1>
+                <input 
+                    id="qty" 
+                    defaultValue={link.qty} 
+                    onChange={chngqty} 
+                    type="number" 
+                    className="w-8 lg:w-10 text-black text-sm lg:text-lg lg:font-bold border border-gray-300 rounded" 
+                />
+            </div>
+            <h1 className="text-lg lg:text-3xl font-bold lg:mb-3">${price}</h1>
+            <button className="bg-red-500 text-sm lg:text-lg px-3 py-1 rounded hover:bg-red-600" onClick={del}>
+                Remove from cart
+            </button>
+        </div>
+    </div>
+    
+
     )
 }
 

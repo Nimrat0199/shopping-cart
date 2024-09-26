@@ -7,7 +7,7 @@ function Cart(){
 
 
     return(
-        <div className="lg:w-[90%] w-full lg:mx-auto md:flex gap-4 flex-wrap justify-center mt-9 lg:p-5 min-h-[600px]">
+        <div className=" md:w-full lg:mx-auto md:flex gap-4 flex-wrap justify-center mx-3 mt-9 lg:p-5 min-h-[600px]">
             {carts && carts.map((cart)=><Card2 key={cart.id} link={cart}/>)}
         </div>
     )
