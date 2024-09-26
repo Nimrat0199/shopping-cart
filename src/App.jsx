@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Header from "./components/Header"
 import { Outlet } from 'react-router-dom'
 import Footer from "./components/Footer"
-import {CartContext, CartProvider, useCart} from "./Context/Cartcontext"
+import { CartProvider} from "./Context/Cartcontext"
 
 function App() {
   const [carts,setCarts] = useState([])
